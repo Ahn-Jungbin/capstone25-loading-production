@@ -65,16 +65,7 @@
 ---
 
 ## 6. 설치 및 실행
-1. Repository를 클론합니다.
-   ```bash
-   git clone https://github.com/Ahn-Jungbin/capstone25-loading-production.git
-   ```
-
-2. Unity Hub에서 src 폴더를 프로젝트로 오픈합니다.
-
-3. API Key 설정 파일에 본인의 LLM API 키를 입력합니다.
-
-4. Play 버튼을 눌러 실행합니다.
+- 미구현
 
 ---
 
