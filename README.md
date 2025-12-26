@@ -41,10 +41,14 @@
 ## 4. 프로젝트 구조
 ```text
 .
-├── docs/               # 프로젝트 관련 문서 (결과보고서 등)
-├── src/                # Unity 프로젝트 소스 코드 (.cs)
-├── assets/             # 게임 리소스 (Sprites, Audio, Prefabs)
-│   ├── Audio/          # BGM 및 효과음
-│   └── Sprites/        # 캐릭터 및 배경 이미지
-├── .gitignore          # Git 제외 파일 설정
-└── README.md           # 프로젝트 소개
+├── .gitignore          # Git 관리 제외 대상 설정 (Unity/VS 임시 파일 등)
+├── README.md           # 프로젝트 개요 및 가이드
+├── docs/               # [문서] 중간/최종 결과보고서 PDF 등
+├── resources/          # [원본 자원] 수정 가능한 원본 파일 보관
+│     ├── sound/        # Cakewalk 프로젝트 파일, 녹음 원본
+│     └── image/        # 캐릭터 원본 시트, 배경 원본 PSD
+└── src/                # [소스 코드] Unity 프로젝트 전체
+      └── Assets/       # 실제 게임 제작에 쓰이는 에셋 및 스크립트
+            ├── Audio/  # 게임용으로 추출된 사운드 (.mp3, .wav)
+            ├── Sprites/# 게임용으로 최적화된 이미지 (.png)
+            └── Scripts/# 게임 로직 구현 C# 소스 코드 (.cs)
