@@ -42,7 +42,7 @@
 ```text
 .
 ├── .gitignore            # Git 관리 제외 대상 설정 (Unity/VS 임시 파일 등)
-├── README.md             # 프로젝트 개요 및 가이드
+├── README.md             # 프로젝트 설명
 ├── docs/                 # [문서] 중간/최종 결과보고서 PDF 등
 ├── resources/            # [원본 자원] 수정 가능한 원본 파일 보관
 │     ├── sound/            # Cakewalk 프로젝트 파일, 녹음 원본
