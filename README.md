@@ -1,14 +1,13 @@
-# 주제: 음성 인식을 활용한 게임 제작 (Voice Controlled Game)
-> **팀명: 로딩 프로덕션 (Loading Production)**
-
+# 음성 인식을 활용한 게임 제작
+> **팀명: 로딩 프로덕션(Loading Production)**
+> 
+> 사용자의 음성 명령과 LLM을 결합한 **지시자-수행자** 방식의 게임 프로젝트
 ---
 
-## 1. 프로젝트 개요 (Project Overview)
-기존의 키보드/마우스 입력에서 벗어나, **사용자의 음성**(**STT**)을 통해 캐릭터를 조작하는 게임
+## 1. 프로젝트 개요
+기존의 키보드/마우스 입력이 아닌, **사용자의 음성**(**STT**)을 통해 캐릭터에게 명령하고,
 
-**LLM API**를 활용하여 플레이어의 다양한 발화 의도를 해석하고 게임 내 행동으로 연결
-
-= 사용자의 음성 명령과 LLM을 결합한 **지시자-수행자** 방식의 게임 프로젝트
+이를 **LLM API**가 받아서 사용자의 발화 의도를 해석하여 게임 내 캐릭터의 행동으로 연결
 
 - **개발 기간**: 2025.09 ~
 - **주요 특징**: 
@@ -18,7 +17,7 @@
 
 ---
 
-## 2. 팀원 및 역할 (Team Members)
+## 2. 팀원 및 역할
 | 성명 | 역할 | 상세 업무 |
 | :--- | :---: | :--- |
 | **안정빈 (팀장)** | 기획 및 총괄 | 프로젝트 매니징, 문서 작성, 시스템 기획 |
@@ -27,19 +26,19 @@
 
 ---
 
-## 3. 기술 스택 (Tech Stack)
-### Environment
+## 3. 기술 스택
+### 개발 환경
 <img src="https://img.shields.io/badge/Unity-FFFFFF?style=flat-square&logo=Unity&logoColor=black"/> <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white"/> <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white"/>
 
-### Technology & Logic
-- **Backend Logic**: API-based Stateless Architecture (C#)
-- **AI Interface**: LLM API (OpenAI GPT) for Intent Analysis
+### 기술 및 로직
+- **백엔드 로직**: API-based Stateless Architecture (**C#**)
+- **LLM API**: **OpenAI GPT** for Intent Analysis
 - **STT**: Voice-to-Text Integration
-- **Sound**: Cakewalk for BGM & SFX
+- **소리**: **Cakewalk** for BGM & SFX
 
 ---
 
-## 4. 프로젝트 구조 (Project Structure)
+## 4. 프로젝트 구조
 ```text
 .
 ├── docs/               # 프로젝트 관련 문서 (결과보고서 등)
