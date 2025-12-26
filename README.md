@@ -52,3 +52,40 @@
             ├── Audio/  # 게임용으로 추출된 사운드 (.mp3, .wav)
             ├── Sprites/# 게임용으로 최적화된 이미지 (.png)
             └── Scripts/# 게임 로직 구현 C# 소스 코드 (.cs)
+```
+
+---
+
+## 5. 실행 방법 및 환경 (Getting Started)
+### 개발 환경
+- OS: Windows 10/11
+- Engine: Unity 2022.x 이상
+- Resolution: 1920x1080 (추천)
+
+---
+
+## 6. 설치 및 실행 (Setup)
+1. Repository를 클론합니다.
+   ```bash
+   git clone https://github.com/Ahn-Jungbin/capstone25-loading-production.git
+   ```
+
+2. Unity Hub에서 src 폴더를 프로젝트로 오픈합니다.
+
+3. API Key 설정 파일에 본인의 LLM API 키를 입력합니다.
+
+4. Play 버튼을 눌러 실행합니다.
+
+---
+
+## 7. 주요 기능 (Key Features)
+- Natural Language Control: "오른쪽으로 가줘" 등 자연어 명령 수행
+- Intent Mapping: LLM이 사용자의 문장을 분석하여 4방향 이동 로직으로 변환
+- Camera Tracking: 캐릭터의 이동 동선을 추적하는 스마트 카메라 시스템
+
+---
+
+## 8. 현재 이슈 및 개선 사항 (Known Issues)
+- [ ] 주변 소음 및 발음에 따른 음성 인식 정확도 최적화
+- [ ] LLM 응답 대기 시간(Latency) 개선
+- [ ] 사운드 출력과 마이크 입력 간의 간섭 방지 로직 고도화
