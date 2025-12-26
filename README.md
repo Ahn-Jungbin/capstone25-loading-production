@@ -1,20 +1,48 @@
-# capstone25-loading-production
+# 음성 인식을 활용한 게임 제작 (Voice Controlled Game)
+> **로딩 프로덕션 (Loading Production)**
+> AI·SW 캡스톤디자인: 사용자의 음성 명령과 LLM을 결합한 지시자-수행자 방식의 게임 프로젝트
 
-## 프로젝트 개요
-### 1) 문제
-현재 대부분의 게임에서는 키보드, 마우스, 조이스틱, 터치스크린 등의 물리적 입력 장치에 의존하여 플레이어가 캐릭터를 조작하고 상호작용할 수 있도록 설계된다. 그러나 이러한 방식은 플레이어들의 몰입도를 강화하는 데에 있어 분명한 한계가 있다. 이를 개선하기 위하여 게임을 기존 방식보다 실감나게 경험할 수 있도록 하는 가상현실이나 증강현실 등의 진보된 기술들이 나오고 있으나, 실제 사람 간의 대화 같이 음성 기반의 의미 전달을 수행할 수 있는 기능은 미비해 자유로운 상호작용은 불가능한 실정이다.
-### 2) 목적
-본 프로젝트는 현상의 문제를 해결하기 위해 음성 인식 기술을 게임에 접목하여 혁신적인 상호작용 시스템을 구축하며, 다음과 같은 의의를 갖는다.
-- 음성 조작을 통한 접근성 확대 : 음성 입력을 게임에 활용하는 사례는 이전에도 있었으나 해당 게임들은 음의 크기나 음의 높낮이를 이용하는 방식으로, 진정한 의미에서 '음성 인식'을 활용한 게임은 아직까지도 등장하지 않았다. 본 프로젝트는 기존의 정형화된 입력 방식에서 벗어나 음성 상호작용을 통해 혁신적인 게임 경험을 제공하고, 새로운 시장 가치를 창출한다.
-- 차별화된 게임 경험과 몰입감 제공 : 발화를 통해 조작하는 게임은 현재 희소하며, 고전적 조작 방식으로부터의 탈피라는 점에서 의의를 가진다. 또한, 조작을 넘어서서 지시와 수행 관계로 이어지는 플레이어와 메인 캐릭터의 특수한 관계성은 플레이어에게 독특한 몰입감을 제공한다.
+---
 
-## 팀원 명단 및 역할
-안정빈 : 
+## 1. 프로젝트 개요 (Project Overview)
+기존의 키보드/마우스 입력에서 벗어나, **사용자의 음성(STT)**을 통해 캐릭터를 조작하는 혁신적인 게임입니다. 단순히 특정 단어를 매칭하는 것이 아니라, **LLM API**를 활용하여 플레이어의 다양한 발화 의도를 해석하고 게임 내 행동으로 연결합니다.
 
-원용준 : 
+- **개발 기간**: 2025.09 ~ 2025.12
+- **주요 특징**: 
+  - 지시자(플레이어)와 수행자(캐릭터) 간의 상호작용 극대화
+  - LLM을 활용한 자연어 명령 해석 및 매핑
+  - Unity 엔진 기반의 유연한 조작 시스템 구축
 
-김민우 :
+---
 
-## 실행 방법/환경
+## 2. 팀원 및 역할 (Team Members)
+| 성명 | 역할 | 상세 업무 |
+| :--- | :---: | :--- |
+| **안정빈 (팀장)** | 기획 및 총괄 | 프로젝트 매니징, 문서 작성, 시스템 기획 |
+| **원용준 (팀원)** | 메인 개발 | Unity 게임 로직 설계, 음성 인식(STT) 모듈 구현 |
+| **김민우 (팀원)** | 개발 및 리소스 | LLM API 연동 및 데이터 처리, 사운드 에셋 관리 |
 
-## 주요 폴더 구조 예시
+---
+
+## 3. 기술 스택 (Tech Stack)
+### Environment
+<img src="https://img.shields.io/badge/Unity-FFFFFF?style=flat-square&logo=Unity&logoColor=black"/> <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white"/> <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white"/>
+
+### Technology & Logic
+- **Backend Logic**: API-based Stateless Architecture (C#)
+- **AI Interface**: LLM API (OpenAI GPT) for Intent Analysis
+- **STT**: Voice-to-Text Integration
+- **Sound**: Cakewalk for BGM & SFX
+
+---
+
+## 4. 프로젝트 구조 (Project Structure)
+```text
+.
+├── docs/               # 프로젝트 관련 문서 (결과보고서 등)
+├── src/                # Unity 프로젝트 소스 코드 (.cs)
+├── assets/             # 게임 리소스 (Sprites, Audio, Prefabs)
+│   ├── Audio/          # BGM 및 효과음
+│   └── Sprites/        # 캐릭터 및 배경 이미지
+├── .gitignore          # Git 제외 파일 설정
+└── README.md           # 프로젝트 소개
